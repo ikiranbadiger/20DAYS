@@ -2,154 +2,223 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kiran M Badiger - Internship Progress</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Internship Progress - Kiran M. Badiger" />
+  <title>Kiran M. Badiger | Internship Progress</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    header p {
-      margin: 0.3rem 0;
-      font-size: 1rem;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section.intro {
-      margin-bottom: 2rem;
-    }
-
-    section.intro h2 {
-      font-size: 1.5rem;
-      color: #003366;
-    }
-
-    section.intro p {
-      font-size: 1.05rem;
-      line-height: 1.6;
-    }
-
-    section.days {
-      margin-bottom: 2rem;
-    }
-
-    section.days h2 {
-      font-size: 1.5rem;
-      color: #003366;
-      margin-bottom: 1rem;
-    }
-
-    .day-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 10px;
-    }
-
-    .day-list a {
-      display: block;
-      text-decoration: none;
-      background-color: #e6f0ff;
-      color: #003366;
-      padding: 0.8rem;
-      border-radius: 5px;
-      text-align: center;
-      transition: background-color 0.2s;
-      font-weight: bold;
-    }
-
-    .day-list a:hover {
-      background-color: #cce0ff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #003366;
-      color: white;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      .day-list {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:"Segoe UI",Tahoma,Verdana,sans-serif; }
+    body { background:#f8fafc; color:#333; line-height:1.6; display:flex; flex-direction:column; min-height:100vh; }
+    header { background:linear-gradient(135deg,#004aad,#0078d7); color:#fff; text-align:center; padding:2rem 1rem; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    header h1 { font-size:2rem; margin-bottom:0.3rem; }
+    header p { margin:0.3rem 0; }
+    header a { color:#d9eaff; text-decoration:none; }
+    header a:hover { text-decoration:underline; }
+    section.intro { max-width:900px; margin:2rem auto; background:#fff; padding:2rem; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    section.intro h2 { color:#004aad; margin-bottom:0.8rem; }
+    main { flex:1; max-width:900px; margin:1rem auto 2rem auto; padding:0 1rem; }
+    .day-card { background:#fff; border-left:6px solid #004aad; border-radius:8px; margin-bottom:1.2rem; padding:1.2rem 1.5rem; box-shadow:0 2px 6px rgba(0,0,0,0.06); transition:transform 0.2s ease, box-shadow 0.2s ease; }
+    .day-card:hover { transform:translateY(-4px); box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+    .day-card h3 { color:#004aad; margin-bottom:0.5rem; }
+    .day-card ul { margin-left:1.5rem; list-style:disc; }
+    .day-card li { margin-bottom:0.4rem; }
+    footer { background:#004aad; color:#fff; text-align:center; padding:1rem 0; font-size:0.9rem; }
+    @media(max-width:600px){ header h1{font-size:1.6rem;} section.intro{margin:1rem; padding:1.2rem;} .day-card{padding:1rem;} }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Kiran M Badiger</h1>
-    <p>📧 kiranbadiger.nh@gmail.com</p>
-    <p>B.E. in Electrical Engineering | CCIE Security Trainee</p>
+    <h1>Kiran M. Badiger</h1>
+    <p><strong>Email:</strong> <a href="mailto:kiranbadiger.nh@gmail.com">kiranbadiger.nh@gmail.com</a></p>
+    <p><strong>Field:</strong> Electrical Engineering | CCIE Security (Ongoing)</p>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>Career Goal</h2>
-      <p>
-        I am an Electrical Engineering graduate currently pursuing CCIE Security, passionate about building secure and scalable IT infrastructures. This website documents my 20-day internship progress across virtualization, networking, automation, and cybersecurity tools. Each day represents a hands-on learning experience in real-world technologies.
-      </p>
-    </section>
+  <section class="intro">
+    <h2>Career Goal</h2>
+    <p>
+      I am an aspiring network and security engineer with a strong foundation in Electrical Engineering and a passion for enterprise IT infrastructure. Through my CCIE Security studies and this internship, I am gaining practical experience in virtualization, networking, security, automation, and monitoring—aiming to build secure, scalable, and automated systems for the future.
+    </p>
+  </section>
 
-    <section class="days">
-      <h2>Internship Progress</h2>
-      <div class="day-list">
-        <!-- Generate Day 01 to Day 20 links -->
-        <!-- These point to days/day-01.html etc. -->
-        <!-- You can add those HTML files later -->
-        <!-- Loop (written manually below for 20 days) -->
-        <a href="days/day-01.html">Day 01</a>
-        <a href="days/day-02.html">Day 02</a>
-        <a href="days/day-03.html">Day 03</a>
-        <a href="days/day-04.html">Day 04</a>
-        <a href="days/day-05.html">Day 05</a>
-        <a href="days/day-06.html">Day 06</a>
-        <a href="days/day-07.html">Day 07</a>
-        <a href="days/day-08.html">Day 08</a>
-        <a href="days/day-09.html">Day 09</a>
-        <a href="days/day-10.html">Day 10</a>
-        <a href="days/day-11.html">Day 11</a>
-        <a href="days/day-12.html">Day 12</a>
-        <a href="days/day-13.html">Day 13</a>
-        <a href="days/day-14.html">Day 14</a>
-        <a href="days/day-15.html">Day 15</a>
-        <a href="days/day-16.html">Day 16</a>
-        <a href="days/day-17.html">Day 17</a>
-        <a href="days/day-18.html">Day 18</a>
-        <a href="days/day-19.html">Day 19</a>
-        <a href="days/day-20.html">Day 20</a>
-      </div>
-    </section>
+  <main>
+    <h2 style="text-align:center; margin-bottom:1rem; color:#004aad;">20-Day Internship Progress</h2>
+
+    <div class="day-card">
+      <h3>Day 01 – VMware ESXi Installation + Windows VM + RDP</h3>
+      <ul>
+        <li>Installed and configured VMware ESXi hypervisor.</li>
+        <li>Created first Windows VM instance.</li>
+        <li>Enabled Remote Desktop Protocol (RDP) for access.</li>
+        <li>Connected remotely to the VM from client machine.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 02 – Ubuntu VM Setup + SSH Remote Access</h3>
+      <ul>
+        <li>Deployed latest Ubuntu Server VM on ESXi.</li>
+        <li>Configured SSH service and keys for secure access.</li>
+        <li>Tested remote shell login from India → Paris host.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 03 – ESXi Networking + Cisco IOS Router</h3>
+      <ul>
+        <li>Configured virtual switches and port groups.</li>
+        <li>Integrated Cisco IOS router with ESXi network.</li>
+        <li>Created unique subnets and verified NAT reachability.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 04 – pfSense Firewall Configuration</h3>
+      <ul>
+        <li>Installed pfSense as virtual firewall.</li>
+        <li>Configured WAN/LAN interfaces and static routes.</li>
+        <li>Set up NAT rules for internal VM communication.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 05 – WireGuard VPN</h3>
+      <ul>
+        <li>Installed and configured WireGuard on both ends.</li>
+        <li>Established encrypted tunnel between Paris DC and India client.</li>
+        <li>Validated secure connectivity and bandwidth performance.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 06 – OpenVPN Setup and Comparison</h3>
+      <ul>
+        <li>Deployed OpenVPN in site-to-site and client modes.</li>
+        <li>Compared latency, configuration ease, and security with WireGuard.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 07 – Tailscale Mesh VPN</h3>
+      <ul>
+        <li>Implemented zero-configuration mesh VPN using Tailscale.</li>
+        <li>Connected all student devices securely across regions.</li>
+        <li>Enabled subnet routing for cross-node communication.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 08 – FreeRADIUS + Captive Portal</h3>
+      <ul>
+        <li>Configured FreeRADIUS server for user authentication.</li>
+        <li>Integrated RADIUS with pfSense captive portal.</li>
+        <li>Tested login flows and access control policies.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 09 – DNS / DHCP Server Setup</h3>
+      <ul>
+        <li>Configured central DHCP scopes for network devices.</li>
+        <li>Created internal DNS zones and custom records.</li>
+        <li>Verified name resolution and IP allocations.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 10 – Migration to Proxmox VE</h3>
+      <ul>
+        <li>Installed Proxmox Virtual Environment on bare metal.</li>
+        <li>Imported existing VMs from ESXi.</li>
+        <li>Configured VLAN-aware bridging and networking.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 11 – MikroTik RouterOS Configuration</h3>
+      <ul>
+        <li>Set up VLANs, NAT, and static routing.</li>
+        <li>Enabled remote management via WinBox and SSH.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 12 – OSPF with Cisco + MikroTik</h3>
+      <ul>
+        <li>Implemented OSPF for dynamic routing in hybrid lab.</li>
+        <li>Verified LSAs, route propagation, and adjacencies.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 13 – FRRouting (Linux Router)</h3>
+      <ul>
+        <li>Replaced Cisco router with FRRouting on Linux.</li>
+        <li>Redistributed routes between OSPF and static networks.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 14 – IDS/IPS – Suricata / Zeek</h3>
+      <ul>
+        <li>Deployed Suricata for intrusion detection and traffic analysis.</li>
+        <li>Configured Zeek for deep packet inspection and logging.</li>
+        <li>Monitored real-time alerts for suspicious traffic.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 15 – Zabbix / Grafana / Prometheus Monitoring</h3>
+      <ul>
+        <li>Installed Zabbix server and agents on VM hosts.</li>
+        <li>Integrated Prometheus data sources with Grafana.</li>
+        <li>Built dashboards for CPU, RAM, and network monitoring.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 16 – Ansible Automation</h3>
+      <ul>
+        <li>Created Ansible playbooks for VM configuration.</li>
+        <li>Automated IP setup and user creation across servers.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 17 – Docker Networking Basics</h3>
+      <ul>
+        <li>Installed Docker and set up containers for a web app.</li>
+        <li>Configured reverse proxy using NGINX to link containers.</li>
+        <li>Tested container communication and port mapping.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 18 – Proxmox Cluster and High Availability</h3>
+      <ul>
+        <li>Created multi-node Proxmox cluster.</li>
+        <li>Configured HA groups and tested live VM migration.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 19 – Backups, Snapshots & Restore</h3>
+      <ul>
+        <li>Implemented VM backup schedules and snapshot policies.</li>
+        <li>Performed disaster-recovery drill and restore testing.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Day 20 – Final Integration Project</h3>
+      <ul>
+        <li>Integrated Proxmox, pfSense, Cisco, MikroTik, VPN and monitoring systems.</li>
+        <li>Presented network design diagram and live demo of full infrastructure.</li>
+      </ul>
+    </div>
+
   </main>
 
   <footer>
-    &copy; 2025 Kiran M Badiger
+    © 2025 Kiran M. Badiger — All Rights Reserved
   </footer>
-
 </body>
 </html>
